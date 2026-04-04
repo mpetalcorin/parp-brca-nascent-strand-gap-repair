@@ -1,5 +1,6 @@
 # parp-brca-nascent-strand-gap-repair
 A proof-of-concept dynamical systems model of PARP inhibitor-induced nascent strand gap formation and BRCA1-BRCA2-RAD51-dependent repair during DNA replication.
+<img width="1146" height="656" alt="Screenshot 2026-04-04 at 19 57 12" src="https://github.com/user-attachments/assets/2b2a1fee-dc17-41f0-b44b-864b7f81e7ce" />
 # PARP-BRCA Nascent Strand Gap Repair Proof-of-Concept
 
 ## Overview
