@@ -17,35 +17,53 @@ PARP inhibitors can trap PARP enzymes on endogenous replication-associated DNA i
 
 The model is designed to encode this mechanistic logic in an interpretable mathematical form.
 
-## ## Core state variables
+# PARP inhibitor-induced nascent strand gap repair: proof-of-concept notebook
 
-The reduced model tracks the following variables over time:
+This notebook implements a reduced dynamical systems model for **PARP inhibitor-induced nascent strand gap formation** and **BRCA1-BRCA2-RAD51-dependent repair**.
 
-- **L(t)**, ligatable nascent lagging-strand discontinuities
-- **T(t)**, trapped PARP-DNA complexes
-- **G(t)**, persistent daughter-strand gaps
-- **R(t)**, RAD51 repair intermediates
-- **M(t)**, matured nascent DNA
-- **D(t)**, secondary double-strand breaks
-- **S(t)**, predicted survival
+## Biological variables
 
-## Reduced mathematical framework
+- **L(t)**: ligatable nascent lagging-strand discontinuities  
+- **T(t)**: trapped PARP-DNA complexes  
+- **G(t)**: persistent daughter-strand gaps  
+- **R(t)**: RAD51 repair intermediates  
+- **M(t)**: matured nascent DNA  
+- **D(t)**: secondary double-strand breaks  
+- **S(t)**: predicted survival  
 
-**dL/dt = α − η_LIG1 k_lig L − k_p L**
+## Reduced model
 
-**dT/dt = k_trap^max I_PARPi τ k_p L − δ_T T**
+$$
+\frac{dL}{dt} = \alpha - \eta_{LIG1} k_{lig} L - k_p L
+$$
 
-**dG/dt = β₁L + β₂T − γη_BRCA1η_BRCA2G − κG − δ_GG**
+$$
+\frac{dT}{dt} = k_{trap}^{max} I_{PARPi} \tau k_p L - \delta_T T
+$$
 
-**dR/dt = γη_BRCA1η_BRCA2G − ρR − δ_RR**
+$$
+\frac{dG}{dt} = \beta_1 L + \beta_2 T - \gamma \eta_{BRCA1}\eta_{BRCA2} G - \kappa G - \delta_G G
+$$
 
-**dM/dt = η_LIG1 k_lig L + ρR**
+$$
+\frac{dR}{dt} = \gamma \eta_{BRCA1}\eta_{BRCA2} G - \rho R - \delta_R R
+$$
 
-**dD/dt = κG − δ_DD**
+$$
+\frac{dM}{dt} = \eta_{LIG1} k_{lig} L + \rho R
+$$
 
-**S(t) = exp[−ω_G ∫G(u)du − ω_D ∫D(u)du]**
+$$
+\frac{dD}{dt} = \kappa G - \delta_D D
+$$
 
-## Extended notebook features
+and the survival function is
+
+$$
+S(t) = \exp\left[-\omega_G \int_0^t G(u)\,du - \omega_D \int_0^t D(u)\,du\right]
+$$
+
+This is a **conceptual model**, not a parameter-fitted experimental model.
 
 The extended notebook adds the following modules:
 
