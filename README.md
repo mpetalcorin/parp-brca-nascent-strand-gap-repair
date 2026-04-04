@@ -128,6 +128,9 @@ This repository is most suitable for:
 - computational biologists exploring reduced DNA repair models
 - users developing data-integrated frameworks for hypothesis testing
 
+## Citation
+**Petalcorin, M.I.R.** (2026). A Reduced Dynamical Systems Model of PARP Inhibitor-Induced Nascent Strand Gap Formation and BRCA1-BRCA2-RAD51-Dependent Repair During DNA Replication. https://github.com/mpetalcorin/parp-brca-nascent-strand-gap-repair
+
 ## License and use
 
 Use this repository for scientific exploration, education, model development, and hypothesis generation. Quantitative biological claims should be made cautiously and validated experimentally.
