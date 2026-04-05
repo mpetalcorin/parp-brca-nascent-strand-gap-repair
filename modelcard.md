@@ -110,4 +110,5 @@ Users should clearly state that the model is exploratory and conceptual.
 
 This model is intended as a foundation for further refinement. Future versions may incorporate calibrated parameters, additional repair pathway states, stochastic dynamics, or experimental data fitting.
 
-
+## Citation
+**Petalcorin, M.I.R.** (2026). A Reduced Dynamical Systems Model of PARP Inhibitor-Induced Nascent Strand Gap Formation and BRCA1-BRCA2-RAD51-Dependent Repair During DNA Replication. https://github.com/mpetalcorin/parp-brca-nascent-strand-gap-repair
