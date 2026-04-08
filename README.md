@@ -147,7 +147,7 @@ This repository is most suitable for:
 - users developing data-integrated frameworks for hypothesis testing
 
 ## Citation
-**Petalcorin, M.I.R.** (2026). A Reduced Dynamical Systems Model of PARP Inhibitor-Induced Nascent Strand Gap Formation and BRCA1-BRCA2-RAD51-Dependent Repair During DNA Replication. https://github.com/mpetalcorin/parp-brca-nascent-strand-gap-repair
+**Petalcorin, M.I.R.** (2026). A Reduced Dynamical Systems Model of PARP Inhibitor-Induced Nascent Strand Gap Formation and BRCA1-BRCA2-RAD51-Dependent Repair During DNA Replication. chemRxiv. https://doi.org/10.26434/chemrxiv.15001697/v1
 
 ## License and use
 
